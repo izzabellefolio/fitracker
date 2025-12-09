@@ -21,12 +21,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              },
-              {
-                "glob": "**/*",
-                "input": "public/assets",
-                "output": "/assets"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
