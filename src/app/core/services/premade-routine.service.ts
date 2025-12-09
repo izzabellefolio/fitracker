@@ -11,6 +11,7 @@ export class PremadeRoutineService {
   constructor(private http: HttpClient) {}
 
   getPremadeRoutines(): Observable<Routine[]> {
-    return this.http.get<Routine[]>('data/premade-routines.json');
+    return this.http.get<Routine[]>(`${window.location.pathname}data/premade-routines.json`);
   }
+
 }
